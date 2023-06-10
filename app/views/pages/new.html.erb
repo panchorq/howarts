@@ -1,0 +1,24 @@
+<h1>HOWARTS</h1>
+<p>Agrega un nuevo registro</p>
+
+<%= form_with model: @character, method: :post do |form| %>
+
+    <div>
+        <%= form.label :name %>
+        <%= form.text_field :name %>
+    </div>
+
+    <div>
+        <%= form.label :location %>
+        <%= form.text_field :location %>
+    </div>
+
+    <div>
+        <%= form.label :house %>
+        <%= form.text_field :house %>
+    </div>
+
+    <div>
+        <%= form.submit "Guardar" %>
+    </div>
+<% end %>

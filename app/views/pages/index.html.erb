@@ -1,0 +1,12 @@
+<h1>Alumnos de Howarts</h1>
+<br>
+<% @characters.each do |character| %>
+    <div class="char" style="border:5px;">
+        <%= 'Nombre: ' + character.name %></br>
+        <%= 'Ubicación: ' + character.location %></br>
+        <%= 'Casa: ' + character.house %></br>
+        <%= '--------------------------------------------'%>
+    </div>
+<% end %>
+
+<p>Si quieres agregar otro alumno, de click<a href="pages/new">AQUI</a></p>
